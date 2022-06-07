@@ -1,0 +1,199 @@
+@mixin progress_p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    opacity: 0.5;
+    margin-left: 5px;
+    color:rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    text-transform: uppercase;
+
+    @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 17px ;
+    }
+    @media (max-width: 768px) {
+       display: none;
+    }
+}
+@mixin progress_span {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+
+    @media (max-width: 1024px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    @media (max-width: 768px) {
+        width: 284px;
+        height: 52px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+
+
+section {
+    background-image: url(../assets/images/header/Rectangle\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 177px 0 20px;
+    min-height: 100vh;
+    position: relative;
+
+
+    div {
+        position: relative;
+        z-index: 4;
+        h2 {
+            font-family: 'Kaushan Script';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 93px;
+            color: #ffffff;
+            text-align: center;
+
+
+            @media (max-width: 1024px) {
+                font-size: 48px;
+                line-height: 70px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 36px;
+                line-height: 52px;
+            }
+        }
+        h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 144px;
+            line-height: 176px;
+            color: #FFFFFF;
+            text-align: center;
+            margin: 30px 0 0;
+            text-transform: uppercase;
+
+
+            @media (max-width: 1024px) {
+                font-size: 96px;
+                line-height: 117px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 48px;
+                line-height: 59px;
+            }
+        }
+        .line {
+            width: 170px;
+            border: 4px solid #FFFFFF;
+            margin: 55px auto 74px;
+
+            @media (max-width: 1024px) {
+                width: 115px;
+                margin: 38px auto 50px;
+            }
+
+            @media (max-width: 768px) {
+                width: 134px;
+                margin: 50px auto;
+            }
+
+        }
+        button {
+            width: 370px;
+            height: 80px;
+            background-color: transparent;
+            border: 4px solid #FFFFFF;
+            color: #ffffff;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            margin-bottom: 116px;
+
+            @media (max-width: 1024px) {
+                width: 317px;
+                height: 52px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            @media (max-width: 768px) {
+                width: 284px;
+                height: 52px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+        }
+    }
+    .progress {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .progress__item {
+            div {
+                width: 270px;
+                border: 4px solid #F9EFCF;
+                position: relative;
+
+                @media (max-width: 1024px) {
+                    max-width: 233px;
+                }
+                @media (max-width: 768px) {
+                    max-width: 57px;
+                }
+
+                div {
+                    position: absolute;
+                    width: 20%;
+                    border: 4px solid #F38281;
+                    top: 0;
+                    left: 0;
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+section::after {
+    content: "";
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+p {
+    @include progress_p
+}
+span {
+    @include progress_span
+ }
