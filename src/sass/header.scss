@@ -1,9 +1,11 @@
 header {
+    padding: 42px 0 32px;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: transparent;
     z-index: 9999;
-    padding: 42px 0 32px;
-
 }
 
 .header__box {
