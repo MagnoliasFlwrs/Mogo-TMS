@@ -1,0 +1,50 @@
+header {
+    position: static;
+    background-color: transparent;
+    z-index: 9999;
+    padding: 42px 0 32px;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+        @media (max-width:768px) {
+            display: none;
+        }
+        a {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            @media (max-width: 1024px) {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+
+    }
+    nav > a:hover {
+        color: #F4BF87;
+        text-decoration: underline;
+    }
+    nav > a:not(:last-child) {
+        margin-right: 50px;
+
+        @media (max-width: 1024px) {
+            margin-right: 35px;
+        }
+    }
+    div {
+        display: none;
+        @media (max-width:768px) {
+            display: block;
+        }
+    }
+}

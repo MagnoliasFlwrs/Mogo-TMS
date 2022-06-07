@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./header.scss";
+
+.content {
+    max-width: calc(1170px + 15px*2);
+    padding: 0 15px;
+    margin: 0 auto;
+    @media (max-width:1024px) {
+        padding: 0 16px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 16px;
+    }
+}
