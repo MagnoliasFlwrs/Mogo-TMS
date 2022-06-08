@@ -1,0 +1,181 @@
+.about {
+    padding: 60px 0 108px;
+    background-color: #ffffff;
+    @media (max-width: 1024px) {
+        padding: 44px 0 59px;
+    }
+    @media (max-width: 768px) {
+        padding: 44px 0 59px;
+    }
+}
+.content {
+    max-width: calc(1170px + 15px*2);
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1024px) {
+        padding: 0 16px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 16px;
+    }
+
+    h3 {
+        font-family: 'Kaushan Script';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+        color: #2D3033;
+
+        @media (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 35px;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+    h2 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #2D3033;
+        text-transform: uppercase;
+        margin: 19px 0 43px;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 20px 0 40px;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 20px 0 40px;
+        }
+    }
+    .line {
+        width: 170px;
+        margin: 0 auto;
+        height: 4px;
+        background-color: #F38281;
+
+        @media (max-width: 1024px) {
+            width: 148px;
+        }
+        @media (max-width: 768px) {
+            width: 134px;
+        }
+    }
+    .descr {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        text-align: center;
+        margin: 38px 0 80px;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+            margin: 66px 0 107px;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 16px;
+            margin: 17px 0 33px;
+        }
+    }
+    .team {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .view {
+            width: 370px;
+            height: 338px;
+            position: relative;
+
+            @media (max-width: 1024px) {
+                max-width: 317px;
+                height: 283px;
+            }
+            @media (max-width: 768px) {
+                max-width: 288px;
+                height: 258px;
+                flex-direction: column;
+            }
+
+        }
+        .steam {
+            width: 370px;
+            height: 338px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            display: none;
+
+            @media (max-width: 1024px) {
+                max-width: 317px;
+                height: 283px;
+            }
+            @media (max-width: 768px) {
+                flex-direction: row;
+                max-width: 288px;
+                height: 83px;
+            }
+            .img {
+                @media (max-width: 1024px) {
+                    max-width: 317px;
+                    height: 283px;
+                }
+                @media (max-width: 768px) {
+                    max-width: 288px;
+                    height: 83px;
+                }
+            }
+
+            .steam__tittle {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 1);
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 36px;
+
+                @media (max-width: 1024px) {
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-top: 32px;
+                }
+                @media (max-width: 768px) {
+                    margin-left: 36px;
+                }
+            }
+        }
+        .view:hover {
+            .steam {
+                display: block;
+            }
+        }
+        .active {
+            background-color: rgba(149, 225, 211, 1);
+        }
+
+    }
+}
