@@ -31,18 +31,18 @@ header {
                 line-height: 15px;
             }
         }
-
-    }
-    nav > a:hover {
-        color: #F4BF87;
-        text-decoration: underline;
-    }
-    nav > a:not(:last-child) {
-        margin-right: 50px;
-
-        @media (max-width: 1024px) {
-            margin-right: 35px;
+        a:hover {
+            color: #F4BF87;
+            text-decoration: underline;
         }
+        a:not(:last-child) {
+            margin-right: 50px;
+
+            @media (max-width: 1024px) {
+                margin-right: 35px;
+            }
+        }
+
     }
     div {
         display: none;

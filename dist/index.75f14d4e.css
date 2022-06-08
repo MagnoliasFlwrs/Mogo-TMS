@@ -5,10 +5,13 @@
 }
 
 header {
+  width: 100%;
   z-index: 9999;
   background-color: #0000;
   padding: 42px 0 32px;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .header__box {
@@ -41,17 +44,17 @@ header {
   }
 }
 
-.header__box nav > a:hover {
+.header__box nav a:hover {
   color: #f4bf87;
   text-decoration: underline;
 }
 
-.header__box nav > a:not(:last-child) {
+.header__box nav a:not(:last-child) {
   margin-right: 50px;
 }
 
 @media (max-width: 1024px) {
-  .header__box nav > a:not(:last-child) {
+  .header__box nav a:not(:last-child) {
     margin-right: 35px;
   }
 }
@@ -73,12 +76,6 @@ header {
 }
 
 @media (max-width: 1024px) {
-  .content {
-    padding: 0 16px;
-  }
-}
-
-@media (max-width: 768px) {
   .content {
     padding: 0 16px;
   }
