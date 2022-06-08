@@ -31,17 +31,11 @@
         font-size: 24px;
         line-height: 28px;
     }
-    @media (max-width: 768px) {
-        width: 284px;
-        height: 52px;
-        font-size: 18px;
-        line-height: 21px;
-    }
 }
 
 
 
-section {
+.intro {
     background-image: url(../assets/images/header/Rectangle\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,9 +118,8 @@ section {
             line-height: 28px;
             text-align: center;
             text-transform: uppercase;
-            position: relative;
-            left: 50%;
-            transform: translate(-50%);
+            margin: 0 auto;
+            display: block;
             margin-bottom: 116px;
 
             @media (max-width: 1024px) {
@@ -153,7 +146,8 @@ section {
         .progress__item {
             div {
                 width: 270px;
-                border: 4px solid #F9EFCF;
+                height: 4px;
+                background-color: #FFFFFF;
                 position: relative;
 
                 @media (max-width: 1024px) {
@@ -166,7 +160,8 @@ section {
                 div {
                     position: absolute;
                     width: 20%;
-                    border: 4px solid #F38281;
+                    height: 4px;
+                    background-color: #F38281;
                     top: 0;
                     left: 0;
 
@@ -191,9 +186,9 @@ section::after {
     left: 0;
     z-index: 3;
 }
-p {
+.progress__tittle {
     @include progress_p
 }
-span {
+.num {
     @include progress_span
  }
