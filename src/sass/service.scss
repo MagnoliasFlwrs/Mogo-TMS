@@ -2,7 +2,7 @@
     padding: 45px 0 58px;
 }
 .service__box {
-    .service__subtittle {
+    .service__tittle {
         font-family: 'Kaushan Script';
         font-style: normal;
         font-weight: 400;
@@ -49,7 +49,8 @@
         margin-top: 80px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 140px 30px;
+        column-gap: 140px;
+        row-gap: 30px;
 
         @media (max-width: 1024px) {
             gap: 55px 31px;
@@ -60,8 +61,7 @@
             margin-top: 66px;
         }
         .card {
-            width: 370px;
-            height: 139px;
+
             display: flex;
 
             @media (max-width: 1024px) {

@@ -69,6 +69,156 @@ header {
   }
 }
 
+.service {
+  padding: 45px 0 58px;
+}
+
+.service__box .service__tittle {
+  color: #2d3033;
+  text-align: center;
+  font-family: Kaushan Script;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+@media (max-width: 1024px) {
+  .service__box .service__tittle {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.service__box h2 {
+  color: #2d3033;
+  text-align: center;
+  margin: 20px 0 44px;
+  font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 42px;
+}
+
+@media (max-width: 1024px) {
+  .service__box h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.service__box .serv__line {
+  width: 170px;
+  height: 4px;
+  background-color: #f38281;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .service__box .serv__line {
+    width: 148px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service__box .serv__line {
+    width: 144px;
+  }
+}
+
+.service__box .service__card {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 140px;
+  margin-top: 80px;
+  display: grid;
+}
+
+@media (max-width: 1024px) {
+  .service__box .service__card {
+    gap: 55px 31px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service__box .service__card {
+    grid-template-columns: 1fr;
+    gap: 36px 0;
+    margin-top: 66px;
+  }
+}
+
+.service__box .service__card .card {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .service__box .service__card .card {
+    max-width: 313px;
+    height: 117px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service__box .service__card .card {
+    max-width: 288px;
+    height: 94px;
+    margin: 0 auto;
+  }
+}
+
+.service__box .service__card .card div {
+  flex-direction: column;
+  margin-left: 33px;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .service__box .service__card .card div {
+    margin-left: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service__box .service__card .card div {
+    margin-left: 22px;
+  }
+}
+
+.service__box .service__card .card div h4 {
+  text-transform: uppercase;
+  color: #2d3033;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@media (max-width: 1024px) {
+  .service__box .service__card .card div h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.service__box .service__card .card div span {
+  color: #2d3033;
+  margin-top: 20px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@media (max-width: 1024px) {
+  .service__box .service__card .card div span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 .content {
   max-width: 1200px;
   margin: 0 auto;
