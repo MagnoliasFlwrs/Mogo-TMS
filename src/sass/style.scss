@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+@import "./about.scss";
+=======
+<<<<<<< HEAD
+@import "./intro.scss";
+=======
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +11,11 @@
 }
 
 @import "./header.scss";
+<<<<<<< HEAD
 @import "./examples.scss";
+=======
+@import url(./devices.scss);
+>>>>>>> main
 
 .content {
     max-width: calc(1170px + 15px*2);
@@ -16,3 +26,5 @@
         padding: 0 16px;
     }
 }
+>>>>>>> main
+>>>>>>> ddca0a465f2dc286c85eb7a147ddbc89136049e3
