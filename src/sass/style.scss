@@ -11,7 +11,11 @@
 }
 
 @import "./header.scss";
+<<<<<<< HEAD
+@import "./examples.scss";
+=======
 @import url(./devices.scss);
+>>>>>>> main
 
 .content {
     max-width: calc(1170px + 15px*2);
